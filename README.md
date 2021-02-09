@@ -1,4 +1,4 @@
-# Next generation bacterail two hybrid (NGB2H)
+# Next generation bacterial two hybrid (NGB2H)
 This repository host the code accompanying the article "A Multiplexed Bacterial Two-Hybrid for Rapid Characterization of Protein-Protein Interactions and Iterative Protein Design"
 
 Protein-protein interactions (PPIs) are required for most biological functions as well as applications ranging from drug design to synthetic cell circuits.  As myriad biological functions involve protein-protein interactions (PPIs), engineered PPIs are crucial for applications ranging from drug design to synthetic cell circuits. However, engineering an arbitraryany PPI is still challenging, and designing sets of orthogonal PPIs that do not cross-interact (a necessity for protein nanostructures, synthetic signaling networks and gene circuit design) is even harder. The main issues are inaccurate predictions of interactions and limited ability to assay large numbers of PPIs. Here we address both problems.  First, we developed a method called the Next-Generation Bacterial Two-Hybrid (NGB2H), which combines gene synthesis, a bacterial two-hybrid, and a high-throughput next-generation sequencing readout, allowing rapid exploration of interactions of programmed protein libraries in a quantitative and scalable way. After rigorously validating it, we used the NGB2H system to design, build, and test large sets of orthogonal synthetic coiled-coils. In an iterative set of experiments, we assayed thousands of PPIs, used the datasets to improve the accuracy of coiled-coil scoring algorithms and then built the largest set of orthogonal PPIs identified to date. 
@@ -7,7 +7,7 @@ Protein-protein interactions (PPIs) are required for most biological functions a
 
 The code is divided into several subdomain problems:
 
-1) **01_ortoCC_score**: Finding orthogonal sets and fast scoring of Coild-coil interactions.
+1) **01_ortoCC_score**: Finding orthogonal sets and fast scoring of Coiled-coil interactions.
 2) **02_ortoCC_design**: Designing orthogonal sets
 3) **03_iCipa**: Creating a new scoring function (iCipa)
 4) **04_ortoCC_DNA**: scripts used in making the DNA library. 
@@ -20,7 +20,7 @@ The installation time is 30-60 min, depending on previous familiarity with pytho
 
 ## Hardware Requirements
 
-Hardware requirments vary based on the size of the orthogonal set being created. 4096*4096 interactions can be scored on a desktop computer with 4 cores @3.3Ghz and 16GB of RAM in ??30 min??
+Hardware requirments vary based on the size of the orthogonal set being created. 4096*4096 interactions can be scored on a desktop computer with 6 cores @3.3Ghz and 16GB of RAM in a few seconds.
 
 
 ## Software Requirements
