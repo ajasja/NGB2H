@@ -1,0 +1,3 @@
+[submodule "01_ortoCC_score"]
+	path = 01_ortoCC_score
+	url = https://github.com/dancsi/OrthoCCTools
