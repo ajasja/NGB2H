@@ -14,6 +14,11 @@ The code is divided into several subdomain problems:
 
 Each folder contains instructions for installation and usage.
 
+To clone the repository (and initialize submodules) do:
+```bash
+    git clone --recurse-submodules https://github.com/ajasja/NGB2H
+```
+
 # Requirements
 
 The installation time is 30-60 min, depending on previous familiarity with python. 
