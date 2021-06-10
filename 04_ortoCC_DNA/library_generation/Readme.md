@@ -4,7 +4,7 @@ Creates codon optimized 230 bp oligonucleotides containing one or two defined pr
 Python 3
 
 # Usage
-
+To run the make file in bash, type
 ```
 make all-8k.lib.fasta
 make 18k.lib.fasta
