@@ -1,1 +1,1 @@
-Contains the fastas of the designed orthogonal sets of the CCNG1 and CCmax libraries
+Contains the fastas of the designed orthogonal sets of the CCNG1 library
