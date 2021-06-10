@@ -266,15 +266,13 @@ def bc_overlap(bcmap, dist):
     collector.
     """
     collector = set()
-    conflict = []
     for bc in bcmap:
         bc_var = mismatch(bc, dist)
         for var in bc_var:
             if var in bcmap and var not in collector:
                 # assumes implicitly that bc -> var and var -> bc will be added
                 collector.add(var)
-                conflict.append((var,bc))
-    return collector, conflict
+    return collector
 
 #-------------------------------------------------------------------------------
 
@@ -456,9 +454,7 @@ if __name__ == '__main__':
     # about 1 min for about 13 million reads
     if args.verbose:
         print('Mapping BCs...', file=sys.stderr)
-    #Build a dictionary of barcode keys with sequence variants as values
-    #get_idx allows this to be done for arbitary length pos/neg value of bc start
-    #variants are then appended to the barcode 
+
     bcmap = defaultdict(list)
     for seq in text_reader(args.infile):
         bc_slice, var_slice = get_idx(seq, args.bc_start, args.bc_length)
@@ -467,8 +463,6 @@ if __name__ == '__main__':
     # filter the dict in place and add bad bcs to a list
     bad_bcs = []
     count=0
-    #check length of the variants (values). If shorter than min_reads append a tuple of each
-    #unique variant sequence to bad_bcs 
     for k,v in bcmap.iteritems():
         if len(v) < args.min_reads:
             count += 1
@@ -495,14 +489,10 @@ if __name__ == '__main__':
 
     # vvv expensive! Consider distributing if args.overlap > 1
     # ~ 2 mins for 900k bcs (0.06% of bcs) @ dist=1
-    overlap_bcs,conflict_bcs = bc_overlap(bcmap, args.overlap)
+    overlap_bcs = bc_overlap(bcmap, args.overlap)
     for bc in overlap_bcs:
         popped = Counter(bcmap.pop(bc)).iteritems()
         bad_bcs.extend((bc, x[1], 'overlap', x[0]) for x in popped)
-    confbcs =[]
-    for bc in conflict_bcs:
-        confbcs.extend((bc[0], " conflicted with ", bc[1],'\n'))
-
 
     if args.verbose:
         print('Found {} overlapping BCs'.format(len(overlap_bcs)), file=sys.stderr)
@@ -545,6 +535,3 @@ if __name__ == '__main__':
             writer = csv.writer(f, lineterminator='\n')
             writer.writerow(['bc', 'count', 'reason', 'var'])
             writer.writerows(bad_bcs)
-    with open('mason.conflicts', 'w') as f:
-        f.writelines(confbcs)
-
