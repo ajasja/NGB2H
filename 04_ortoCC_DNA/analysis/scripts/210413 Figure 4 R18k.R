@@ -10,7 +10,7 @@ library(tidyr)
 ################################################# Read in the data and mash it together #################################################
 setwd("../data")
 load("masons.Rda")
-load("../../190528 R18k bc-gimmel/R18k_with_aliases.Rda")
+load("R18k_with_aliases.Rda")
 
 #map_18k <- read.table("R18k-c1.x-y.txt", header = TRUE) 
 #map_18k <- filter(map_18k, !is.na(X_peptide), !is.na(Y_peptide))%>%
@@ -94,7 +94,7 @@ med18k <- bind_rows(med18k, med18ksnone)
 small18k <- select(med18k, X_peptide, Y_peptide, CIhighavg, CIlowavg)
 write.csv(small18k, file = 'R18kCIavgs.csv', quote = FALSE, row.names = FALSE)
 
-maxset <- read.csv(file = "210409_R18k_max_ortho_sets.csv", header = T, quote = "\'")
+maxset <- read.csv(file = "210603_R18k_largest_orthogonal_subset_gap0.csv", header = T, quote = "\'")
 maxset <- gather(maxset,key = "peptidenum",value = "pepname", -name, -classifier, -minpos,-maxneg, -lnogap)
 maxset$pepname <- gsub("\\[|\\]", "", maxset$pepname)
 maxset <- filter(maxset, pepname != "", pepname != " ")
@@ -196,7 +196,7 @@ ggplot(masontm, aes(log(medavg), Tm)) + geom_point(alpha = 0.4) + geom_abline(in
 #####################################################################################################################################################
 #####################################                                  Figure 4e                                ##################################### 
 #####################################################################################################################################################
-modelscore <-read.table(file = "/Users/Cliff/Documents/Kosuri Lab/NGS files/190109 Roman total data/combined_scoring.csv", sep = ",", colClasses = c("NULL","character","character", rep("NULL", 7), "character",rep("NULL", 4)), header = T)
+modelscore <-read.table(file = "combined_scoring.csv", sep = ",", colClasses = c("NULL","character","character", rep("NULL", 7), "character",rep("NULL", 4)), header = T)
 colnames(modelscore) <- c("X_peptide", "Y_peptide","D5_b_nc")
 trim18k <- separate(med18k, X_peptide,into = c("X_peptide","xjunk"),  sep = "-") %>%
   separate(Y_peptide, into = c("Y_peptide", "yjunk"), sep = "-")
