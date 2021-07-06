@@ -1,0 +1,62 @@
+{
+  "N_aminoacids": 29, 
+  "N_heptades": 4, 
+  "N_heterodimers": 11, 
+  "N_homodimers": 0, 
+  "N_offtarget_above_min_ontarget": 0, 
+  "N_pairs": 11, 
+  "ag_helicity": {
+    "max": 58.200000000000003, 
+    "mean": 35.640000000000001, 
+    "min": 16.960000000000001, 
+    "std": 12.912012863627275
+  }, 
+  "binding_min_affinity": -8.605751037597656, 
+  "binding_min_affinity_%": 90.1437759399414, 
+  "charge": {
+    "max": -1.0015910819900435, 
+    "mean": -3.1816315614583983, 
+    "min": -6.9967024005280223, 
+    "std": 1.6210327941523837
+  }, 
+  "gravy": {
+    "max": -0.88620689655172391, 
+    "mean": -1.074294670846395, 
+    "min": -1.1896551724137929, 
+    "std": 0.13531479077544145
+  }, 
+  "instability_index": {
+    "max": 54.768965517241384, 
+    "mean": 35.070062695924783, 
+    "min": 17.124137931034483, 
+    "std": 8.8884462628594996
+  }, 
+  "isoelectric_point": {
+    "max": 5.11016845703125, 
+    "mean": 4.5717440518465908, 
+    "min": 3.93157958984375, 
+    "std": 0.3447870323322561
+  }, 
+  "lower_is_better": true, 
+  "max_affinity": -8.844300270080566, 
+  "min_affinity": -5.357970237731934, 
+  "nonbinidng_max_affinity": -7.598079681396484, 
+  "nonbinidng_max_affinity_%": 64.95199203491211, 
+  "normalization_max": -9, 
+  "normalization_min": -5, 
+  "orthogonality_average": -1.9379725456237793, 
+  "orthogonality_average_%": 48.44931364059448, 
+  "orthogonality_gap": -1.0076713562011719, 
+  "orthogonality_gap_%": 25.191783905029297, 
+  "starting_pos": "f", 
+  "total_II_pairs": 26, 
+  "total_II_pairs_%": 59.09090909090909, 
+  "total_IN_mismatches": 0, 
+  "total_IN_mismatches_%": 0.0, 
+  "total_NN_pairs": 18, 
+  "total_NN_pairs_%": 40.90909090909091, 
+  "total_electrostatic_matches": 86, 
+  "total_electrostatic_matches_%": 97.72727272727273, 
+  "total_electrostatic_mismatches": 2, 
+  "total_electrostatic_mismatches_%": 2.272727272727273
+}
