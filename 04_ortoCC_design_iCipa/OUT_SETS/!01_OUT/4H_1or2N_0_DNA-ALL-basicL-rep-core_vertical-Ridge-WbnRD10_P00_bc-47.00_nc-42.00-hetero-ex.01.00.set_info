@@ -1,0 +1,68 @@
+{
+  "!full_name": "4H_1or2N_0_DNA-ALL-basicL-rep-core_vertical-Ridge-WbnRD10-P00-DEL5.00/4H_1or2N_0_DNA-ALL-basicL-rep-core_vertical-Ridge-WbnRD10_P00_bc-47.00_nc-42.00/hetero-ex.01.00.set", 
+  "N_aminoacids": 29, 
+  "N_heptades": 4, 
+  "N_heterodimers": 18, 
+  "N_homodimers": 11, 
+  "N_offtarget_above_min_ontarget": 1855, 
+  "N_pairs": 29, 
+  "ag_helicity": {
+    "max": 74.989999999999995, 
+    "mean": 65.301276595744682, 
+    "min": 45.259999999999998, 
+    "std": 5.9686724243158249
+  }, 
+  "alignment": "P00", 
+  "binding_cutoff": -47.0, 
+  "binding_min_affinity": -6.407009601593018, 
+  "binding_min_affinity_%": 28.14019203186035, 
+  "charge": {
+    "max": 7.9920079920079923, 
+    "mean": -0.0014737660426438581, 
+    "min": -7.9949555240932808, 
+    "std": 1.6667561650558442
+  }, 
+  "gravy": {
+    "max": 0.65517241379310387, 
+    "mean": 0.5612619222303743, 
+    "min": 0.32413793103448291, 
+    "std": 0.13263095317044832
+  }, 
+  "instability_index": {
+    "max": 22.937931034482759, 
+    "mean": 8.9816581071166581, 
+    "min": -7.9103448275862087, 
+    "std": 6.1095024609805488
+  }, 
+  "isoelectric_point": {
+    "max": 10.84539794921875, 
+    "mean": 6.3660070541057179, 
+    "min": 3.36334228515625, 
+    "std": 0.79576868705270676
+  }, 
+  "lower_is_better": true, 
+  "max_affinity": -9.369919776916504, 
+  "min_affinity": -5.674149990081787, 
+  "name": "4H_1or2N_0_DNA-ALL-basicL-rep-core_vertical-Ridge-WbnRD10-P00-DEL5.00/4H_1or2N_0_DNA-ALL-basicL-rep-core_vertical-Ridge-WbnRD10", 
+  "nonbinding_cutoff": -42.0, 
+  "nonbinidng_max_affinity": -8.365510940551758, 
+  "nonbinidng_max_affinity_%": 67.31021881103516, 
+  "normalization_max": -10, 
+  "normalization_min": -5, 
+  "orthogonality_average": -1.6063284873962402, 
+  "orthogonality_average_%": 32.126569747924805, 
+  "orthogonality_gap": 1.9585013389587402, 
+  "orthogonality_gap_%": -39.170026779174805, 
+  "starting_pos": "f", 
+  "total_II_pairs": 76, 
+  "total_II_pairs_%": 65.51724137931035, 
+  "total_IN_mismatches": 4, 
+  "total_IN_mismatches_%": 3.4482758620689653, 
+  "total_NN_pairs": 36, 
+  "total_NN_pairs_%": 31.03448275862069, 
+  "total_electrostatic_matches": 232, 
+  "total_electrostatic_matches_%": 100.0, 
+  "total_electrostatic_mismatches": 0, 
+  "total_electrostatic_mismatches_%": 0.0, 
+  "type": "hetero-ex"
+}
