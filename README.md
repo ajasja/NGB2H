@@ -7,10 +7,12 @@ Protein-protein interactions (PPIs) are required for most biological functions a
 
 The code is divided into several subdomain problems:
 
-1) **01_ortoCC_score**: Finding orthogonal sets and fast scoring of Coiled-coil interactions.
-2) **02_ortoCC_design**: Designing orthogonal sets
-3) **03_iCipa**: Creating a new scoring function (iCipa)
-4) **04_ortoCC_DNA**: scripts used in making the DNA library. 
+- **01_ortoCC_score**: Finding orthogonal sets and fast scoring of Coiled-coil interactions.
+- **02_ortoCC_design**: Designing orthogonal sets
+- **03_iCipa**: Creating a new scoring function (iCipa)
+- **04_ortoCC_design_iCipa**: Designing orthogonal sets using iCipa
+- **05_ortoCC_DNA**: scripts used in making the DNA library.
+- **06_set_visualisations**: visualization of set orthogonality and heptade alignment
 
 Each folder contains instructions for installation and usage.
 
