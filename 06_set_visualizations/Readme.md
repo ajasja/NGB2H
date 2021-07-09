@@ -6,4 +6,4 @@ The subdirectories contain an Excel file for each set in the library. The excel 
 
 The HTML files are self contained interactive plots, that show the iCipa scoring function vs the melting point temperatures derived from the experimental interaction score for all the sets in the CCNG1 library. Mouse over the point to show the details (an example is shown below). The [first file](0_no_shifting_DNA-ALL-basic-rep-nter_core-Ridge-WsdRD10.plot.html) does not use heptade shifting, while the [second does](5_with_shifting_DNA-ALL-basic-rep-nter_core-Ridge-WsdRD10.plot.html).  
 
-![example mouse over image](03_extra_html\example_mouse_over.png).
+![example mouse over image](03_extra_html/example_mouse_over.png)
