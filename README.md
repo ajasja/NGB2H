@@ -13,6 +13,7 @@ The code is divided into several subdomain problems:
 - **04_ortoCC_design_iCipa**: Designing orthogonal sets using iCipa
 - **05_ortoCC_DNA**: scripts used in making the DNA library.
 - **06_set_visualizations**: visualization of set orthogonality and heptade alignment
+- **07_supplementary_files**: supplementary tables and plasmid sequences 
 
 Each folder contains instructions for installation and usage.
 
