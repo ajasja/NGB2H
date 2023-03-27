@@ -1,10 +1,7 @@
-Cliff, could you add an example to run and the extra scripts you used? 
+# This directory contains the scripts for the major analyses in the paper:
 
-Here is an example of sections
-https://github.com/neurodata/lol
-
-
-
-```
-
-This pipelin will seq the chip, chop the carrots etc...
+* analysis -- Preprocessing raw reads to enrichment ratios and figures.
+* barcode_counting --  We take NGS reads of DNA barcodes and condense it down to just barcode counts
+* barcode_mapping -- Scripts necessary to take NGS reads of proteins and barcodes and uniquely deidentify each barcode and corresponding protein pair.
+* library_generation -- Creates codon optimized 230 bp oligonucleotides.
+* scripts -- Helper scrips.
