@@ -1,5 +1,5 @@
 # Next generation bacterial two hybrid (NGB2H)
-This repository host the code accompanying the article "A Multiplexed Bacterial Two-Hybrid for Rapid Characterization of Protein-Protein Interactions and Iterative Protein Design"
+This repository host the code accompanying the article [A Multiplexed Bacterial Two-Hybrid for Rapid Characterization of Protein-Protein Interactions and Iterative Protein Design](https://www.nature.com/articles/s41467-023-38697-x)"
 
 Protein-protein interactions (PPIs) are required for most biological functions as well as applications ranging from drug design to synthetic cell circuits.  As myriad biological functions involve protein-protein interactions (PPIs), engineered PPIs are crucial for applications ranging from drug design to synthetic cell circuits. However, engineering an arbitraryany PPI is still challenging, and designing sets of orthogonal PPIs that do not cross-interact (a necessity for protein nanostructures, synthetic signaling networks and gene circuit design) is even harder. The main issues are inaccurate predictions of interactions and limited ability to assay large numbers of PPIs. Here we address both problems.  First, we developed a method called the Next-Generation Bacterial Two-Hybrid (NGB2H), which combines gene synthesis, a bacterial two-hybrid, and a high-throughput next-generation sequencing readout, allowing rapid exploration of interactions of programmed protein libraries in a quantitative and scalable way. After rigorously validating it, we used the NGB2H system to design, build, and test large sets of orthogonal synthetic coiled-coils. In an iterative set of experiments, we assayed thousands of PPIs, used the datasets to improve the accuracy of coiled-coil scoring algorithms and then built the largest set of orthogonal PPIs identified to date. 
 
@@ -41,4 +41,4 @@ The package uses python 3 and Jupyter notebooks. It was tested using python 3.6 
 
 # Citation
 
-When using this package or data please cite [A Multiplexed Bacterial Two-Hybrid for Rapid Characterization of Protein-Protein Interactions and Iterative Protein Design | bioRxiv](https://www.biorxiv.org/content/10.1101/2020.11.12.377184v1)
+When using this package or data please cite [A Multiplexed Bacterial Two-Hybrid for Rapid Characterization of Protein-Protein Interactions and Iterative Protein Design | Nature Communications 2023](https://www.nature.com/articles/s41467-023-38697-x)
